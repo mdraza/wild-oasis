@@ -4,7 +4,7 @@ import { createBooking } from "../_lib/actions";
 import { useReservation } from "./ReservationContext";
 import { differenceInDays } from "date-fns";
 
-async function ReservationForm({ cabin, user }) {
+function ReservationForm({ cabin, user }) {
   const { range } = useReservation();
   const { maxCapacity, regularPrice, discount, id } = cabin;
 
